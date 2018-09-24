@@ -63,8 +63,7 @@ def get_laughter_instances(probs, threshold = 0.5, min_length = 0.2):
 				instances.append(current_list)
 				current_list = []
 	for i in instances:
-		print i
-		print
+		print('{}/n'.format(i))
 	instances = [frame_span_to_time_span(collapse_to_start_and_end_frame(i)) for i in instances if len(i) > min_length]
 	return instances
 
@@ -88,11 +87,11 @@ def format_outputs(instances, wav_paths):
 	return outs
 
 def segment_laughs(input_path,model_path,output_path,threshold=0.5,min_length=0.2):
-	print; print 'Loading audio file...'
+	print('\nLoading audio file...')
 	y,sr = librosa.load(input_path,sr=8000)
 	full_res_y, full_res_sr = librosa.load(input_path,sr=44100)
-	
-	print; print 'Looking for laughter...'; print
+
+	print('\nLooking for laughter...\n')
 	model = load_model(model_path)
 	feature_list = get_feature_list(y,sr)
 
