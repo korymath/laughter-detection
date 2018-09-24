@@ -7,7 +7,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
 python3 -m pip install -r requirements.txt
-python3 segment_laughter.py aug16.wav models/model.h5 output 0.8 0.1
+python3 segment_laughter.py aug16.wav models/model.h5 output 0.9 0.2
 ```
 
 
