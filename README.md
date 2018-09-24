@@ -1,5 +1,20 @@
 # laughter-detection
 
+## Run
+
+```sh
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+python segment_laughter.py aug16.wav models/model.h5 output 0.8 0.1
+```
+
+
+
+
+
+
 
 This library contains code and models to segment  regions of laughter from an audio file. The models/ folder contains models trained on the [Switchboard](https://catalog.ldc.upenn.edu/ldc97s62) data set.
 

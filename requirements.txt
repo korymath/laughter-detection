@@ -1,0 +1,16 @@
+audioread==2.1.6
+decorator==4.3.0
+h5py==2.8.0
+joblib==0.12.5
+Keras==2.2.2
+Keras-Applications==1.0.4
+Keras-Preprocessing==1.0.2
+librosa==0.6.2
+llvmlite==0.25.0
+numba==0.40.0
+numpy==1.15.2
+PyYAML==3.13
+resampy==0.2.1
+scikit-learn==0.19.2
+scipy==1.1.0
+six==1.11.0
